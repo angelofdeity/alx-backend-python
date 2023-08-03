@@ -1,4 +1,4 @@
-#!/usr/bin env python3
+#!/usr/bin/env python3
 """ Basic annotations - define variables"""
 
 a: int = 1
