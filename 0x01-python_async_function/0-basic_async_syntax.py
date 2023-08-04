@@ -9,5 +9,7 @@ async def wait_random(max_delay=10):
     that waits for a random delay between 0 and max_delay
     (included and float value) seconds and eventually returns it."""
     delay = random.uniform(0, max_delay)
+    print('c', delay)
     await asyncio.sleep(delay)
+    print('c', delay)
     return delay
