@@ -3,7 +3,8 @@
 import asyncio
 import random
 from collections.abc import Iterator
-async def async_generator() -> Iterator[int]:
+from typing import AsyncGenerator
+async def async_generator() -> AsyncGenerator[int, None]:
     """asynchronously generate random values"""
     for _ in range(10):
         await asyncio.sleep(1)
